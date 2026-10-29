@@ -6,8 +6,8 @@ import java.util.Set;
 
 public class App {
     public static void main(String[] args) {
-        // To start, look at Centroid.java
-        // BEFORE running the code, make a prediction of what the following will print:
+
+
 
         Centroid locA = new Centroid(4, 9, "Salamander");
         Centroid locB = new Centroid(4, 9, "Food");
@@ -19,7 +19,13 @@ public class App {
         System.out.println("Result of locB == locC " + (locB == locC));
         System.out.println("Result of locB.equals(locC) " + locB.equals(locC));
 
-        // videoDemo();
+        HashSet<Centroid> centroids = new HashSet<>();
+
+        centroids.add(locB);
+
+        System.out.println(centroids.contains(new Centroid(4,9,"Food")));
+
+         videoDemo();
     }
 
     // We will look at this a bit later in the livecode, please ignore for first part
