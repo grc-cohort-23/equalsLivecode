@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.swing.plaf.synth.SynthStyle;
+
 public class App {
     public static void main(String[] args) {
         // To start, look at Centroid.java
@@ -18,6 +20,12 @@ public class App {
 
         System.out.println("Result of locB == locC " + (locB == locC));
         System.out.println("Result of locB.equals(locC) " + locB.equals(locC));
+
+        HashSet<Centroid> centroids = new HashSet<>();
+
+        centroids.add(locB);
+
+        System.out.println(centroids.contains(new Centroid(4,9,"Food")));
 
         // videoDemo();
     }
