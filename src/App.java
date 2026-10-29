@@ -19,7 +19,13 @@ public class App {
         System.out.println("Result of locB == locC " + (locB == locC));
         System.out.println("Result of locB.equals(locC) " + locB.equals(locC));
 
-        // videoDemo();
+        HashSet<Centroid> set = new HashSet<>();
+
+        set.add(locB);
+
+        System.out.println(set.contains(new Centroid(4, 9, "Food")));
+
+        videoDemo();
     }
 
     // We will look at this a bit later in the livecode, please ignore for first part
